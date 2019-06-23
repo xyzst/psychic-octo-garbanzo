@@ -8,6 +8,7 @@
 ## Dependencies
 
 1. React.js
+2. Axios
 
 ## Notes
 
