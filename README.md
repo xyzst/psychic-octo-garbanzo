@@ -1,4 +1,4 @@
-# Simple Blog Project
+# Simple Blog Project (SPA)
 
 ## Installation
 
