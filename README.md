@@ -13,3 +13,7 @@
 ## Notes
 
 - Does not work with Node v11.x, use Node v9.x or below
+
+## Todo list
+
+1. Perform NPM audit, fix any errors that are unresolved
