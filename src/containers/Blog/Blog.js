@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Blog.css";
 import Posts from "./Posts/Posts";
-import { Route, Link } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 import NewPost from "./NewPost/NewPost";
 
 class Blog extends Component {
@@ -12,10 +12,21 @@ class Blog extends Component {
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink
+                  to="/"
+                  exact
+                  // ** example of adding css classes/styles to NavLink components
+                  // activeClassName="my-active" (default value is 'active')
+                  // activeStyle={{
+                  //   color: "#fa923f",
+                  //   textDecoration: "underline"
+                  // }}
+                >
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to={{
                     pathname: "/new-post",
                     hash: "#submit",
@@ -23,7 +34,7 @@ class Blog extends Component {
                   }}
                 >
                   New Post
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>
