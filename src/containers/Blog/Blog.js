@@ -52,6 +52,9 @@ class Blog extends Component {
           // <Route path="/" exact render={ () => <h1>blah</h1>} />
         }
         <Switch>
+          {
+            // Alternatively, use React.lazy and Suspense in 16.6 to lazy load components
+          }
           {this.state.auth ? (
             <Route path="/new-post" component={AsyncNewPost} />
           ) : null}

@@ -5,6 +5,7 @@ import Blog from "./containers/Blog/Blog";
 class App extends Component {
   render() {
     return (
+      // BrowserRouter has basename prop, default value is '/'
       <BrowserRouter>
         <div className="App">
           <Blog />
