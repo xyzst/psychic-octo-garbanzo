@@ -5,7 +5,7 @@ import { Route, NavLink, Switch, Redirect } from "react-router-dom";
 import asyncComponent from "../../hoc/asyncComponent";
 // import NewPost from "./NewPost/NewPost";
 const AsyncNewPost = asyncComponent(() => {
-  return import("./NewPost/NewPost");
+  return import("./NewPost/NewPost"); // todo: figure out how webpack is doing the code splitting
 });
 
 class Blog extends Component {
