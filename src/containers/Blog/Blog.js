@@ -14,7 +14,7 @@ class Blog extends Component {
             <ul>
               <li>
                 <NavLink
-                  to="/"
+                  to="/posts"
                   exact
                   // ** example of adding css classes/styles to NavLink components
                   // activeClassName="my-active" (default value is 'active')
@@ -45,9 +45,8 @@ class Blog extends Component {
           // <Route path="/" exact render={ () => <h1>blah</h1>} />
         }
         <Switch>
-          <Route path="/" exact component={Posts} />
           <Route path="/new-post" component={NewPost} />
-          <Route path="/:id" exact component={FullPost} />
+          <Route path="/posts" component={Posts} />
         </Switch>
       </div>
     );
