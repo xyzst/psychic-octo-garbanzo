@@ -16,4 +16,4 @@
 
 ## Todo list
 
-1. Perform NPM audit, fix any errors that are unresolved
+1. Perform npm audit, fix any errors/vulnerabilities
